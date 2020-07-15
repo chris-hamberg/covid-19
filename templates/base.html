@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SARS-CoV-2 Data Visualization</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>COVID-19 Data Visualization</h1>
+        <hr>
+        <p>
+            Data Visualization on the 
+            <a href="https://systems.jhu.edu/research/public-health/ncov">
+                John Hopkins University COVID-19 Dataset</a> 
+                for COVID-19 statistics in the United States.
+            <br>
+            <br>
+            The visualizations are updated with the latest data, daily.
+            The next update is scheduled to begin at {{ timestamp }}, and 
+            will take about 10 minutes to complete.
+            <br>
+        </p>
+        <hr>
+    </header>
+    
+    {% block content %}
+
+    {% endblock %}
+
+    <footer>
+        <center>
+            <p class='copyright'>&copy; 2020</p>
+        </center>
+    </footer>
+
+</body>
+
+</html>

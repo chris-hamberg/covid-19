@@ -1,0 +1,4 @@
+__pycache__/
+plots/
+COVID-19/
+*.py[cod]

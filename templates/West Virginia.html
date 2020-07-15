@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <a href="{{ url_for('index') }}"><< INDEX</a>
+
+    <h2>{{ name }}</h2>
+
+    {% for plot in plots %}
+        <h3>{{ plot.type }}</h3>
+        <img src={{ plot.image }} />
+        <br>
+    {% endfor %}
+
+{% endblock %}

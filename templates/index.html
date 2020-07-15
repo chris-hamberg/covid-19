@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>
+    <h2>
+        Browse Data Visualizations, by State:
+    </h2>
+</p>
+
+
+{% for state in states %}
+    <a href="{{ url_for('state', name=state.name) }}">{{ state.name }}/</a>
+    <br>
+    <br>
+{% endfor %}
+
+{% endblock %}
